@@ -42,7 +42,7 @@ export const MovieContainer = styled.div`
   }
 
   h4 {
-    color: ${(props) => props.theme['blue-900']};
+    color: ${(props) => props.theme['base-gray']};
     font-size: 1rem;
     font-weight: bold;
   }
