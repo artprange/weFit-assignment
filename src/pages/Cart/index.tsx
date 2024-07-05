@@ -73,10 +73,11 @@ export const Cart = () => {
             <EmptyCartContainer>
               <p>Parece que não há nada por aqui :(</p>
               <img src={notFound} alt="Carrinho Vazio" />
-
-              <ReloadButton onClick={() => window.location.reload()}>
+              <NavLink to="/cart">
+              <ReloadButton>
                 Recarregar página
               </ReloadButton>
+              </NavLink>
             </EmptyCartContainer>
           )}
 
