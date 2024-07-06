@@ -10,8 +10,17 @@ export const ItemInfoContainer = styled.div`
   padding: 1rem 0;
 
   @media (max-width: ${breakpoints.tablet}) {
+    width:100%;
+  
     flex-direction: column;
-    align-items: flex-start;
+    margin-bottom: 1rem;
+
+    img{
+      margin-bottom:1rem;
+    }
+
+   
+    
   }
 `
 
@@ -42,25 +51,25 @@ export const ItemDescription = styled.div`
       margin-bottom: 1rem;
     }
 
-    @media (max-width: ${breakpoints.tablet}) {
-      width: 100%;
-      justify-content: space-between;
-    }
+  
+      
+    
   }
-
   @media (max-width: ${breakpoints.tablet}) {
-    margin-bottom: 1rem;
 
-    div {
-      position: absolute;
-      top: 10rem;
-      right: 4.5rem;
-      flex-direction: row;
-      align-items: flex-start;
+    h2{
 
-      width: 50%;
+      width: 2rem;
     }
+    div{
+     
+      flex-direction: row;
+      margin-top: -4.5rem;
+      gap: 5rem;
+    }     
   }
+
+ 
 `
 
 export const ItemQuantity = styled.div`
@@ -96,9 +105,21 @@ export const ItemQuantity = styled.div`
   }
 
   @media (max-width: ${breakpoints.tablet}) {
-    position: absolute;
-    top: 15rem;
-    left: 8rem;
+   
+    align-items: center;
+  
+
+   
+
+   img{
+      margin:0;
+      padding:0
+    }
+    margin-top: -3rem;
+    margin-right: 1rem;
+   
+    width: 30%;   
+
   }
 `
 
@@ -126,24 +147,24 @@ export const Subtotal = styled.div`
   }
 
   @media (max-width: ${breakpoints.tablet}) {
+    
+  
+  justify-content: flex-end;
+  width: 100%;
+  flex-direction: column;
+  margin-left: 15rem;
+  margin-top: -2rem;
+
+  h5{
+    display: block; 
+  }
+
+  img{
     position: absolute;
-    top: 15rem;
-    right: 2.5rem;
-
-    h5 {
-      display: block;
-      font-weight: 700;
-      color: ${(props) => props.theme['gray-700']};
-    }
-    flex-shrink: 1;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: flex-end;
-
-    button {
-      position: absolute;
-      bottom: 5.525rem;
-      right: -0.5rem;
-    }
+    right: 1.25rem;
+    margin-top: -7rem;
+    
+  }
+  
   }
 `
